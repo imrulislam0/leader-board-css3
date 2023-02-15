@@ -1,15 +1,52 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Work+Sans&display=swap");
+
+/* common styles and utilities */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f3f1ff;
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  background-color: #ffffff;
+  width: 870px;
+  padding: 30px;
+}
+hr {
+  border: 1px solid #d1d1d1;
+}
+
 /* top players styles */
 
-.players{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* grid-template-columns: 1fr 1fr 1fr; */
+.top-players {
+  margin-bottom: 30px;
 }
-.player{
-    display: flex;
-    align-items: center;
+.player-title {
+  /* font-weight: 500; */
+  font-size: 24px;
+  color: #562eff;
+  margin-top: 3px;
 }
-.player img{
-    height: 56px;
-    width: 56px;
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  row-gap: 30px;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+}
+.player img {
+  height: 56px;
+  width: 56px;
+}
+.player-name {
+  padding: 16px;
+  font-size: 18px;
 }
